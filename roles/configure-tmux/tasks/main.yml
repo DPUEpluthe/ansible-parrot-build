@@ -11,7 +11,7 @@
   become_method: sudo
 - name: "Download Tmux Conf"
   get_url: 
-    url: https://raw.githubusercontent.com/CallMeLawrence/Comfortable-Tmux-Config/master/tmux.conf
+    url: https://raw.githubusercontent.com/DPUEpluthe/Comfortable-Tmux-Config/master/tmux.conf
     mode: '0644'
     dest: "{{ home }}/.tmux.conf"
 - name: "Configure Vi numbers"
