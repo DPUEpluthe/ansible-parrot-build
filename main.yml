@@ -1,0 +1,14 @@
+---
+- name: "Customize Parrot OS"
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  
+  tasks:
+    - name: "Demo Debug"
+      debug:
+        msg: "Please Learn Ansible"
+  
+  roles:
+    - role: "roles/configure-tmux"
+
